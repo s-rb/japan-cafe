@@ -9,8 +9,28 @@ const DEFAULT_CART_STATE = {
 // Action мы передаем в коде, а стейт - последнее состояние передает реакт
 const cartReducer = (state, action) => {
     if (action.type === 'ADD_ITEM') {
-        const updatedItems = state.items.concat(action.item); // concat в олтичие от push создаст новый объект массива, а не изменить старый
         const updatedTotalAmount = state.totalAmount + (action.item.price * action.item.amount);
+
+        const existingCartItemIndex = state.items.findIndex(item => item.id === action.item.id);
+        const existingCartItem = state.items[existingCartItemIndex];
+        let updatedItem;
+        let updatedItems;
+
+        if (existingCartItem) {
+            updatedItem = {
+                ...existingCartItem,
+                amount: existingCartItem.amount + action.item.amount
+            }
+
+            updatedItems = [...state.items]
+            updatedItems[existingCartItemIndex] = updatedItem;
+        } else {
+            updatedItem = {
+                ...action.item
+            }
+            updatedItems = state.items.concat(updatedItem); // concat в отличие от push создаст новый объект массива, а не изменить старый
+        }
+
         return {
             items: updatedItems,
             totalAmount: updatedTotalAmount

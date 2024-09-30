@@ -13,7 +13,7 @@ const DUMMY_MEALS = [
     {
         id: "m2",
         name: "Спайс в лососе",
-        description: "Рис, лосось, соус спайс",
+        description: "Рис, лосось, соус спайси",
         price: 3.99,
     },
     {

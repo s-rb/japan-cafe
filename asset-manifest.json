@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/japan-cafe/static/css/main.b4d2a261.css",
+    "main.js": "/japan-cafe/static/js/main.22224d68.js",
+    "static/media/sushi.jpg": "/japan-cafe/static/media/sushi.a2b4b921ab28b2b3f6c7.jpg",
+    "index.html": "/japan-cafe/index.html",
+    "main.b4d2a261.css.map": "/japan-cafe/static/css/main.b4d2a261.css.map",
+    "main.22224d68.js.map": "/japan-cafe/static/js/main.22224d68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4d2a261.css",
+    "static/js/main.22224d68.js"
+  ]
+}

@@ -33,4 +33,4 @@ React application for the Japan cafe website made for study ReactJS purpose
 
 ---
 
-#### Demo is [here: (VPS)](http://japan-cafe.surkoff.su)  or [here (Github pages)](https://s-rb.github.io/japan-cafe)
+#### Demo is [here: (VPS)](http://japan-cafe.surkoff.com)  or [here (Github pages)](https://s-rb.github.io/japan-cafe)
